@@ -51,7 +51,7 @@ void flac_tag::get_tag(string &flac_path)
             count += 4;
             while (1)
             {
-                if (count >= block_size)
+                if (count >= (block_size - 4))
                 {
                     break;
                 }
